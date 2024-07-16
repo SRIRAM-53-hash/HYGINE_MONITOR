@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Load the YOLOv5 model with error handling
 try:
-    model = torch.hub.load('ultralytics/yolov5:master', 'custom', path=r'C:/Users/bhara/PycharmProjects/ABD_FLASK/best.pt')
+    model = torch.hub.load('ultralytics/yolov5:master', 'custom', path=r'F:\HYGIENE_MONITOR_ALONG_WITH_DS-main\best.pt')
 except Exception as e:
     print(f"Error loading YOLOv5 model: {e}")
     exit()
@@ -22,7 +22,7 @@ trigger_alarm = False
 pygame.mixer.init()
 
 # Load your audio file (replace 'your_audio_file.mp3' with your actual audio file)
-audio_file_path = 'C:/Users/bhara/PycharmProjects/ABD_FLASK/alert.mp3'
+audio_file_path = 'F:\HYGIENE_MONITOR_ALONG_WITH_DS-main\alert.mp3'
 pygame.mixer.music.load(audio_file_path)
 
 def play_alarm():
