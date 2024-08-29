@@ -47,7 +47,7 @@ def generate_frames():
             # No objects detected, trigger the alarm and capture a picture
             trigger_alarm = True
             cv2.imwrite('C:/Users/bhara/PycharmProjects/ABD_FLASK/no_objects_detected.jpg', frame)
-            # Play the alarm audio
+            # Play the alarm audio # put your file
             play_alarm()
         else:
             trigger_alarm = False
