@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Load the YOLOv5 model with error handling
 try:
-    model = torch.hub.load('ultralytics/yolov5:master', 'custom', path=r'F:\HYGIENE_MONITOR_ALONG_WITH_DS-main\best.pt')
+    model = torch.hub.load('ultralytics/yolov5:master', 'custom', path=r'model file best.pt')
 except Exception as e:
     print(f"Error loading YOLOv5 model: {e}")
     exit()
